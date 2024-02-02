@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/EMaildET"
+        android:layout_width="250sp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#1aab9f"
+        android:drawableLeft="@drawable/register_email"
+
+        android:drawablePadding="8sp"
+        android:hint="輸入E-MAIL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/PasswordET"
+        android:layout_width="250sp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1aab9f"
+        android:drawableLeft="@drawable/register_lock"
+        android:drawablePadding="8sp"
+        android:hint="請輸入密碼"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EMaildET" />
+
+
+    <EditText
+        android:id="@+id/ConfirmPasswordET"
+        android:layout_width="250sp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1aab9f"
+        android:drawableLeft="@drawable/register_lock"
+        android:drawablePadding="8sp"
+        android:hint="請再次輸入密碼"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordET" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="註冊"
+        android:textColor="#1aab9f"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:backgroundTint="#1aab9f"
+        android:text="註冊"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPasswordET" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="已經有帳號了!"
+        app:layout_constraintStart_toStartOf="@+id/RegisterBtn"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterBtn" />
+
+    <TextView
+        android:id="@+id/RegisterTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="登入"
+        android:textColor="#1aab9f"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/LoginBtn"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
